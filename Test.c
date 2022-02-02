@@ -1,7 +1,7 @@
 ﻿#include "stdio.h"
 
-__declspec( dllexport ) int NativeFunc()
+int NativeFunc()
 {
 	puts("[Test.c] NativeFunc");
-    return 123456;
+	return 123456;
 }

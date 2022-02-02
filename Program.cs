@@ -6,13 +6,13 @@ namespace HelloWorld
     class Program
     {
         [DllImport("Test")]
-        static extern int _NativeFunc();
+        static extern int NativeFunc();
 
         static void Main(string[] args)
         {
             Console.WriteLine("[Program.cs] Main");
-            int value = _NativeFunc();
-            Console.WriteLine("[Program.cs] _NativeFunc returns {0}", value);
+            int value = NativeFunc();
+            Console.WriteLine("[Program.cs] NativeFunc returns {0}", value);
         }
     }
 }
